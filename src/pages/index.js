@@ -1,21 +1,45 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import SEO from "../components/seo"
+import Card from "../components/card"
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faInfoCircle,
+  faMap,
+  faChartBar
+} from '@fortawesome/free-solid-svg-icons';
+
+import "../css/index.css"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
+    <SEO/>
+    <div className="description">
+      <p>
+        El Priorizador es una herramienta sencilla que identifica las zonas
+        m&aacute;s necesitadas de nuestro municipio. Es una contribuci&oacute;n
+        al trabajo de ayuda de la Municipalidad de Ciudad del Este y de grupos
+        que est&aacute;n donando a las familias m&aacute;s necesitadas.
+      </p>
+      <p>
+        La herramienta combina datos que sugieren una mayor concentraci&oacute;n
+        de necesidades econ&oacute;micas para apuntar las zonas donde reside la
+        mayor cantidad de familias necesitadas de Ciudad del Este. Esto
+        facilita priorizar la asistencia.
+      </p>
     </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+    <div className="cards">
+      <Card title="Mapa" icon=<FontAwesomeIcon icon={faMap}/>
+        url="https://priorizador.reaccion.org.py/"
+      />
+      <Card title="An&aacute;lisis" icon=<FontAwesomeIcon icon={faChartBar}/>
+        url="https://priorizador.reaccion.org.py/analysis"
+      />
+      <Card title="Acerca de" icon=<FontAwesomeIcon icon={faInfoCircle}/>
+        url="https://priorizador.reaccion.org.py/about"
+      />
+    </div>
   </Layout>
 )
 

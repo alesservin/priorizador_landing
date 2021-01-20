@@ -1,42 +1,27 @@
-import { Link } from "gatsby"
-import PropTypes from "prop-types"
 import React from "react"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+import PriorizadorLogo from "../images/priorizadorLogo.png"
+import CodiumImage from '../images/codium.svg'
+import ReaccionImage from '../images/reaccion.svg'
+import '../css/header.css'
+
+const Header = () => (
+  <header className="ant-layout-header" >
+    <div className="header" style={{ maxHeight: '20vh' }} >
+      <img src={PriorizadorLogo}
+        style={{height: 43, marginLeft: '-10px', marginBottom: 0}}
+        alt="Priorizador"
+      />
+      <div className="header-right">
+        <img className="header-logo" src={ReaccionImage}
+          alt="Reaccion"  style={{height: 43}}
+        />
+        <img className="header-logo" src={CodiumImage}
+          alt="Codium" style={{height: 38}}
+        />
+      </div>
     </div>
   </header>
 )
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-  siteTitle: ``,
-}
 
 export default Header

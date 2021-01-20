@@ -1,0 +1,25 @@
+.ant-layout-header{
+  padding: 0 24px;
+  background: #151f31;
+  flex: 0 0 auto;
+  line-height: 64px;
+}
+
+.header {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  line-height: 64px;
+}
+
+.header-right {
+    justify-content: flex-end;
+}
+.header, .header-right {
+    display: flex;
+    align-items: center;
+    flex: 1 1;
+}
+
+.header-logo {
+    margin-left: 16px;
+}

@@ -1,0 +1,38 @@
+.card {
+  display: inline-block;
+  margin: 8px;
+  margin-top: 20px;
+  font-size: 0;
+  background: white;
+  box-shadow: 4px 4px #151f31;
+}
+
+.card:hover {
+  background: #f7f7f7f5;
+}
+
+.card p {
+  letter-spacing: 0.05em;
+  line-height: 1.3em;
+  font-size: 21px;
+  font-weight: 200;
+  color: #858585;
+  margin: 10px;
+}
+
+.card a {
+    text-decoration: none;
+    color: #151f31;
+}
+
+.card-content {
+  padding: 20px 20px;
+  border-radius: 3px;
+  display: inline-block;
+  width: 300px;
+}
+
+.card .icon {
+  font-size: 150px;
+  color: #151f31;
+}

@@ -1,0 +1,12 @@
+.description {
+  padding: 25px 20px 20px 20px;
+  font-size: 1.2em;
+  text-align: justify;
+}
+
+.cards{
+  width: 100%;
+  padding: 0px 0px 25px 0px;
+  text-align: center;
+  color: #424242;
+}
