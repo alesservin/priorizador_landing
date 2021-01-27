@@ -22,12 +22,6 @@ const IndexPage = () => (
         al trabajo de ayuda de la Municipalidad de Ciudad del Este y de grupos
         que est&aacute;n donando a las familias m&aacute;s necesitadas.
       </p>
-      <p>
-        La herramienta combina datos que sugieren una mayor concentraci&oacute;n
-        de necesidades econ&oacute;micas para apuntar las zonas donde reside la
-        mayor cantidad de familias necesitadas de Ciudad del Este. Esto
-        facilita priorizar la asistencia.
-      </p>
     </div>
     <div className="cards">
       <Card title="Mapa" icon=<FontAwesomeIcon icon={faMap}/>
